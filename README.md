@@ -1,4 +1,4 @@
-#dockerfile pernal practice
+#dockerfile personal practice
 ##如何安装一些常用软件
 ###supervisor
 - ubuntu
@@ -20,4 +20,4 @@ easy_install supervisor
 ```
 
 ##下载指定版本docker
-![docker forum](https://forums.docker.com/t/how-can-i-install-a-specific-version-of-the-docker-engine/1993/6)
+- [docker forum](https://forums.docker.com/t/how-can-i-install-a-specific-version-of-the-docker-engine/1993/6)
