@@ -32,6 +32,16 @@ easy_install supervisor
 ##下载指定版本docker
 - [docker forum](https://forums.docker.com/t/how-can-i-install-a-specific-version-of-the-docker-engine/1993/6)
 
+##openjdk
+截至2016.2.18,ubuntu 14.04不支持apt安装openjdk8,如果想在ubuntu上安装openjdk8,可以使用14.10以上的版本镜像
+```
+apt-get install openjdk-7-jre
+```
+
+- [ask ubuntu](http://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts)
+- [openjdk official method](http://openjdk.java.net/install/)
+
+
 ##如何让镜像变得更小
 ###ubuntu
 1. 更新完软件后记得清除缓存
