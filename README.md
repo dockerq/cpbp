@@ -38,9 +38,10 @@ echo “hello world”
 apt-get install openjdk-7-jre
 ```
 
+参考：
 - [ask ubuntu](http://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts)
 - [openjdk official method](http://openjdk.java.net/install/)
-
+- [set JAVA_HOME for openjdk](reference http://askubuntu.com/questions/175514/how-to-set-java-home-for-java)
 
 ## 如何让镜像变得更小
 ### ubuntu
@@ -108,5 +109,3 @@ CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
 ```
 
 [supervisord.conf](https://github.com/DHOPL/docker-logstash/blob/master/supervisord.conf)
-
-just a test
