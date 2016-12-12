@@ -52,6 +52,11 @@ sudo apt-get clean（未卸载软件的安装包）类似于 rm -rf /var/cache/a
 sudo apt-get autoremove （清理系统不再需要的孤立的软件包）
 ```
 
+### 不安装推荐软件
+```
+apt-get install -y --no-install-recommends vim
+```
+
 ## 使用管道减少镜像大小
 有些软件无法通过包管理工具直接下载，比如`Oracle Java`;或者版本不符合，比如需要安装scala2.10,但是截至**2016.2.29**，ubuntu14.04只有2.9.2，这时我们就需要自己从官网上下载安装。
 
