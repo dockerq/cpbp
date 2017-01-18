@@ -13,7 +13,7 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ...
 ```
-
+[source of cassandra:2.2](https://github.com/docker-library/cassandra/blob/master/2.2/Dockerfile#L43-L45)
 - for alpine
 
 ```
@@ -27,8 +27,7 @@ RUN apk add --update --no-cache \
   && rm -rf /var/cache/apk/*
 ...
 ```
-
-[source of cassandra:2.2](https://github.com/docker-library/cassandra/blob/master/2.2/Dockerfile#L43-L45)
+[reference](https://github.com/gliderlabs/docker-alpine/blob/master/docs/usage.md)
 
 ### useful template
 ```
