@@ -2,9 +2,10 @@
 
 ## Dockerfile
 ### delete extra softs each image layer
+- for ubuntu
+
 ```
 ...
-
 RUN apt-get update && apt-get install -y --no-install-recommends libjemalloc1 && rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update \
@@ -12,6 +13,21 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 ...
 ```
+
+- for alpine
+
+```
+...
+RUN apk add --update --no-cache \
+    python \
+    python-dev \
+    py-pip \
+    build-base \
+  && pip install virtualenv \
+  && rm -rf /var/cache/apk/*
+...
+```
+
 [source of cassandra:2.2](https://github.com/docker-library/cassandra/blob/master/2.2/Dockerfile#L43-L45)
 
 ### useful template
